@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "SF-Pro-Display";
+    font-weight: thin;
+    src: url("../assets/fonts/SF-Pro-Display-Thin.otf");
+  }
+  
+@font-face {
+  font-family: "SF-Pro-Display";
+  font-weight: medium;
+  src: url("../assets/fonts/SF-Pro-Display-Medium.otf");
+}
+
+@font-face {
+  font-family: "SF-Pro-Display";
+  font-weight: regular;
+  src: url("../assets/fonts/SF-Pro-Display-Regular.otf");
+}
+
+@font-face {
+  font-family: "SF-Pro-Display";
+  font-weight: bold;
+  src: url("../assets/fonts/SF-Pro-Display-Semibold.otf");
+}
+
+/* Variables css */
+:root {
+  --dark-blue: #110f2a ;
+  --purple: #0b53c8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "SF-Pro-Display", sans-serif;
+  font-weight: regular;
+
+  color: var(--text-color);
+  max-width: 100%;
+}
