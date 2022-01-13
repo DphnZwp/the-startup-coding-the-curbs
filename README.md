@@ -42,8 +42,8 @@ Hieronder zijn commandlines van HTTPS en SSH die je kunt uitvoeren in de opdrach
 **Installeren met HTTPS**
 
 ```
-git clone 
-cd 
+git clone https://github.com/DphnZwp/the-startup-coding-the-curbs.git
+cd https://github.com/DphnZwp/the-startup-coding-the-curbs.git
 ```
 
 **Installeren met SSH**
