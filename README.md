@@ -49,7 +49,7 @@ cd https://github.com/DphnZwp/the-startup-coding-the-curbs.git
 **Installeren met SSH**
 
 ```
-git@github.com:DphnZwp/
+git@github.com:DphnZwp/the-startup-coding-the-curbs.git
 cd 
 
 ```
