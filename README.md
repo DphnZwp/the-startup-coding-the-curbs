@@ -60,7 +60,7 @@ n.v.t
 
 ## 📕 Wiki
 
-Link naar de [Wiki]()
+Link naar de [Wiki](https://github.com/DphnZwp/the-startup-coding-the-curbs/wiki)
 
 ## 🥇 Bronnen
 
