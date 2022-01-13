@@ -300,7 +300,7 @@ input:checked + .slider:before {
 
 	/* HERO */
 	#hero {
-		padding: 12.8125em 0 12.8125em 14em;
+		padding: 9.75em 0 9.75em 14em;
     background: linear-gradient(rgba(var(--background-blue), 0.7), rgba(var(--background-blue), 0.7)), url(../assets/locatie-gif.gif);
     background-repeat: no-repeat;
     background-size: cover;
