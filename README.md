@@ -22,8 +22,8 @@ waar ze mee bezig zijn. Een van de pijlers voor het ontwerp is interactie en er 
 **Tools gebruikt:**
 
 - 💻 Visual Studio Code
-- ✍️ Illustrator
-- ✍️ Pen & Papier
+- ✍️ Adobe Illustrator
+- ✍️ Potlood, Stift en Papier
 
 **Code Skills:**
 
