@@ -1,3 +1,5 @@
+// MOUSE ANIMATION
+
 // var card = document.querySelector(".card");
 
 // document.querySelector(document).addEventListener("mousemove",function(e) {  

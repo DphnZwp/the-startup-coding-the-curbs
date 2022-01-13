@@ -6,43 +6,100 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Coding the Curbs website.">
 	<link rel="stylesheet" href="styles/style.css" />
+	<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<title>Coding the Curbs</title>
 </head>
 <body>
-	<header>
-		<nav>
-			<img src="assets/ctc-primary-logo-black.svg" alt="Logo">
-			<ul class="primary-navigation flex">
+	<header class="primary-header">
+		<a href="#hero">
+			<img class="logo" src="assets/CTC_Primary_Logo_Black.png" alt="logo">
+		</a>
+		<nav class="wrapper">
+			<ul class="primary-navigation">
 				<li>
-					<a href="index.html">Home</a>
+					<a class="hover-color active" href="#product">
+					Product
+					</a>
 				</li>
 				<li>
-					<a href="#">Services</a>
+					<a class="hover-color" href="#services">
+					Services
+					</a>
 				</li>
 				<li>
-					<a href="#">Updates</a>
+					<a class="hover-color" href="#use-cases">
+						Use-cases
+					</a>
 				</li>
 				<li>
-					<a href="#">Over ons</a>
+					<a class="hover-color" href="#over-ons">
+					Over ons
+					</a>
 				</li>
 				<li>
-					<a href="#">Contact</a>
+					<a class="hover-color" href="#contact">
+					Contact
+					</a>
 				</li>
+				<button class="cta-purple">
+					<a class="text-white" href="#">
+					Sluit je aan
+					</a>
+				</button>
+				<select>
+					<option lang="nl">NL</option>
+					<option lang="en">EN</option>
+					<!-- Andere talen opties -->
+				</select>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<section class="hero">
-			<h1>Coding the Curbs</h1>
-			<h2>De kracht van meervoudig ruimtegebruik</h2>
-			<p>Een oplossing die een digitale laag over de fysieke infrastructuur legt en zo de stad klaarstoomt voor de toekomst.</p>
+		<section id="hero">
+			<article class="text-white">
+				<h1>Coding the Curbs</h1>
+				<h2 class="font-size-heading-small">De kracht van meervoudig ruimtegebruik</h2>
+				<p class="font-size-paragraph-big">
+					Een oplossing die een digitale laag over de fysieke infrastructuur <br> 
+					legt en zo de stad klaarstoomt voor de toekomst.
+				</p>
+				<button class="cta-white">
+					<a href="#">
+					Sluit je aan
+					</a>
+				</button>
+			</article>
 		</section>
-		<section class="product">
-			<h2>Product</h2>
-			<video controls autoplay muted loop>
+		<section id="product">
+			<article class="text-white">
+				<h2>Stel je voor...</h2>
+				<h3>
+					Dat met mooi weer de parkeerplaatsen op <br> 
+					zondag veranderen in gezellige terrassen.
+				</h3>
+				<p>
+					Door straten, buurten en wijken te digitaliseren kan de <br> 
+					ruimte in de stad slimmer worden gebruikt en ingedeeld. <br> 
+					Gedurende de week kan een straat verschillende functies <br> 
+					vervullen. Doordeweeks is er bijvoorbeeld plek voor laden <br> 
+					en lossen, in het weekend is er ruimte voor recreatie.
+				</p>
+			</article>
+			<video controls>
 				<source src="assets/vooruit-met-de-stad.mov">
 				Deze browser heeft geen HTML5 geluid
 			</video>
+		</section>
+		<section class="interaction">
+			<img class="illustration" src="https://static.wixstatic.com/media/21dd0d_9168e24e77fd407fbe7a890ae64342d2~mv2.jpg/v1/fill/w_1899,h_939,al_c,q_90/21dd0d_9168e24e77fd407fbe7a890ae64342d2~mv2.webp" alt="Coding the Curbs Illustratie">
+				<h4>Klik op deze switch om de animaties uit te zetten</h2>
+			<div class="center-switch">
+				<label class="switch">
+				<input type="checkbox" checked>
+				<span class="slider round"></span>
+				</label>
+			</div>
 		</section>
 	</main>
 	<footer>
