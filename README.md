@@ -1,7 +1,7 @@
 # 🚐 Coding the Curbs Website
 
 ## ⛩️ Beschrijving
-[🌐 https://daphnecodingthecurbs.student.fdnd.nl](#)
+[🌐 https://daphnecodingthecurbs.student.fdnd.nl](https://dphnzwp.github.io/the-startup-coding-the-curbs/)
 
 De oude CTC website heeft een herontwerp nodig, omdat de website niet meer up-to-date is. Hierbij moet het duidelijk zijn wie Coding the Curbs is, wat ze doen en
 waar ze mee bezig zijn. Een van de pijlers voor het ontwerp is interactie en er moet meer terug worden laten zien van het product, services en use-cases.
