@@ -55,8 +55,15 @@ h2 {
 
 h3 {
 	font-family: 'Rajdhani', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.5625rem;
+  color: var(--text-color);
+}
+
+h4 {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
   color: var(--text-color);
 }
 
@@ -165,10 +172,23 @@ button {
   font-size: 1.5625rem;
 }
 
+#hero {
+  padding: 5em 1em;
+  background: linear-gradient(rgba(var(--background-blue), 0.7), rgba(var(--background-blue), 0.7)), url(../assets/locatie-gif.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* PRODUCT */
+
+/* Stel je voor */
 
 #product {
   background-color: var(--blue);
+}
+
+.text-white>h1, .text-white>h2, .text-white>h3, .text-white>p {
+  color: var(--white);
 }
 
 video {
@@ -177,12 +197,17 @@ video {
   margin: 0 auto;
 }
 
+/* Illustration */
+
 .illustration {
   width: 100%;
 }
 
-.interaction>h4 {
+.interaction>h2 {
+  margin-top: 2em;
   text-align: center;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
 .center-switch{
@@ -192,6 +217,8 @@ video {
 }
 
 .switch {
+  margin-top: 0.5em;
+  margin-bottom: 2em;
   position: relative;
   display: inline-block;
   width: 60px;
@@ -244,6 +271,27 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* Missie */
+
+.missie {
+  background-color: var(--blue);
+  padding: 5em 0;
+}
+
+.missie>h3 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5625rem;
+  color: var(--white);
+}
+
+.missie>h4 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 3.125rem;
+  color: var(--white);
 }
 
 /* DESKTOP */
@@ -306,19 +354,24 @@ input:checked + .slider:before {
     background-size: cover;
 	}
 
-  .text-white>h1, .text-white>h2, .text-white>h3, .text-white>p {
-    color: var(--white);
-  }
-
   /* PRODUCT */
 
   #product {
     padding: 5em 14em;
   }
 
-  #product>article {
+  .stel {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 5em;
+  }
+
+  .flex-item-left {
+    grid-template-columns: 1/2;
+  }
+
+  .stel>p {
+    grid-template-columns: 2/3;
   }
   
   video {
