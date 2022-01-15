@@ -6,7 +6,7 @@
 De oude CTC website heeft een herontwerp nodig, omdat de website niet meer up-to-date is. Hierbij moet het duidelijk zijn wie Coding the Curbs is, wat ze doen en
 waar ze mee bezig zijn. Een van de pijlers voor het ontwerp is interactie en er moet meer terug worden laten zien van het product, services en use-cases.
 
- De website heeft twee pagina's. Op de eerste pagina staat alle belangrijke informatie en de tweede pagina is een contactpagina. Voor de rest hebben ze ook extra pagina's voor updates.
+ De website heeft twee pagina's. Op de eerste pagina staat alle belangrijke informatie en de tweede pagina is een contactpagina. Voor de rest hebben ze ook extra pagina's voor services, updates en een extra pagina voor het gedeelte "Over ons".
 
 ## 📙 Inhoudsopgave
 
