@@ -62,7 +62,7 @@ n.v.t
 
 Link naar de [Wiki](https://github.com/DphnZwp/the-startup-coding-the-curbs/wiki)
 
-## 🥇 Bronnen
+## 🛒 Bronnen
 
 
 ## ✅ Licentie
