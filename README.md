@@ -1,6 +1,6 @@
 # 🚐 Coding the Curbs Website
 
-## ⛩️ Beschrijving
+## 📋 Beschrijving
 [🌐 https://daphnecodingthecurbs.student.fdnd.nl](https://daphnecodingthecurbs.student.fdnd.nl/)
 
 De oude CTC website heeft een herontwerp nodig, omdat de website niet meer up-to-date is. Hierbij moet het duidelijk zijn wie Coding the Curbs is, wat ze doen en
@@ -8,7 +8,7 @@ waar ze mee bezig zijn. Een van de pijlers voor het ontwerp is interactie en er 
 
  De website heeft twee pagina's. Op de eerste pagina staat alle belangrijke informatie en de tweede pagina is een contactpagina. Voor de rest hebben ze ook extra pagina's voor services, updates en een extra pagina voor het gedeelte "Over ons".
 
-## 📙 Inhoudsopgave
+## 📘 Inhoudsopgave
 
 - [Beschrijving](#beschrijving)
 - [Kenmerken](#kenmerken)
@@ -17,7 +17,7 @@ waar ze mee bezig zijn. Een van de pijlers voor het ontwerp is interactie en er 
 - [Bronnen](#bronnen)
 - [Licentie](#licentie)
 
-## 🐸 Kenmerken
+## 🧰 Kenmerken
 
 **Tools gebruikt:**
 
@@ -66,14 +66,6 @@ Link naar de [Wiki](https://github.com/DphnZwp/the-startup-coding-the-curbs/wiki
 
 
 ## ✅ Licentie
-
-![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
-
-This work is licensed under [GNU GPLv3](./LICENSE).
-
-## Bronnen
-
-## Licentie
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 
