@@ -308,6 +308,12 @@ input:checked + .slider:before {
 .missie {
   background-color: var(--blue);
   padding: 5em 0;
+  perspective: 2000px;
+}
+
+.mouse-animation {
+  transform-style: preserve-3d;
+  transition:all 1.5s linear;
 }
 
 .missie>h2 {
@@ -392,9 +398,6 @@ input:checked + .slider:before {
 
   .flex-item-left {
     grid-template-columns: 1/2;
-    perspective: 2000px;
-    transform-style: preserve-3d;
-  /* transition:all .2s ease; */
   }
 
   .text-purple {
@@ -410,6 +413,11 @@ input:checked + .slider:before {
     padding: 5em 13em;
   }
 
+  #use-cases>h2 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
   .use-cases-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -417,7 +425,14 @@ input:checked + .slider:before {
     gap: 4em;
   }
 
-  .option, .option-two {
+  .use-case-image {
+    position: relative;
+    width:100%;
+    z-index: 1;
+    transition: all .4s ease;
+  }
+
+  .option-one, .option-two, .option-three, .option-four {
     position: relative;
     padding: 0 2em 2em 2em;
     margin-top: -8em;
@@ -431,33 +446,23 @@ input:checked + .slider:before {
     margin-bottom: 5em;
   }
 
-  .two {
+  .option-two-move-down {
     transform: translateY(70px);
     margin-bottom: 5em;
   }
 
-  #use-cases>h2 {
-    text-align: center;
-    margin-bottom: 1em;
-  }
-  
-  .use-case-image {
-    position: relative;
-    width:100%;
-    z-index: 1;
-    transition: all .4s ease;
+  .option-three-move-down {
+    transform: translateY(70px);
   }
 
-  .toggle {
-    display: block;
-  margin-left:  auto;
-  margin-right: 0;
+  .option-four-move-down {
+    transform: translateY(70px);
   }
 
-  .toggle-two {
+  .toggle, .toggle-two, .toggle-three, .toggle-four  {
     display: block;
-  margin-left:  auto;
-  margin-right: 0;
+    margin-left:  auto;
+    margin-right: 0;
   }
 
   .image-size {
