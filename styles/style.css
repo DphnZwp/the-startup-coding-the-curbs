@@ -9,6 +9,7 @@
   --text-color: #110f2a ;
   --cta-color: linear-gradient(to right, #524dd0, #84389e);
   --background-blue: 17, 15, 42;
+  --selection: #84389e;
 }
 
 * {
@@ -29,6 +30,11 @@ body {
 
 main{
 	margin-top: 5.25em;
+}
+
+::selection {
+  color: var(--white);
+  background-color: var(--selection);
 }
 
 h1,
@@ -112,10 +118,10 @@ button {
 }
 
 .cta-purple a {
-	padding: 0.6875em 3em;
+	padding: 0.7em 3em;
 	background-image: var(--cta-color);
 	color: var(--white);
-	border-radius: 0.25em;
+	border-radius: 2em;
 	cursor: pointer;
 }
 
@@ -128,10 +134,10 @@ button {
 .cta-white a {
   display: block;
   margin-top: 1.5em;
-	padding: 0.6875em 3em;
+	padding: 0.7em 3em;
 	background-color: var(--white);
 	color: var(--text-color);
-	border-radius: 0.25em;
+	border-radius: 2em;
   overflow: hidden;
 	cursor: pointer;
 }
@@ -141,21 +147,40 @@ button {
   color: var(--white);
 }
 
+.cta-blue {
+  display: block;
+	padding: 0.7em 3em;
+	background-color: var(--blue);
+	color: var(--white);
+	border-radius: 0 0 2em 2em;
+  overflow: hidden;
+	cursor: pointer;
+}
+
+.cta-blue:hover {
+  background-color: var(--white);
+  box-shadow:inset 0px 0px 0px 2px var(--blue);
+  color: var(--text-color);
+}
+
 .primary-navigation>select {
-	padding: 1em;
-	background-color: white;
-	border: 2px solid var(--dark-blue);
-  cursor: pointer;
-	border-radius: 0.25em;
-	appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9.283 4.898'%3E%3Cpath d='M4.641 4.898a.5.5 0 01-.343-.136L.158.864A.5.5 0 01.842.136L4.64 3.712 8.44.136a.5.5 0 01.686.729L4.984 4.762a.5.5 0 01-.343.136z'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position-x: 3em;
+    background-position-y: 1.25em;
+    background-size: 1em;
+    text-indent: 1em;
+    -moz-appearance:none;
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 5.5em;
+    height: 3.4em;
+    border: 2px solid var(--dark-blue);
+    border-radius: 2em;
 }
 
 .primary-navigation>select:hover {
   border: 2px solid var(--blue);
-}
-
-.primary-navigation>select::after{
-	content: "";
 }
 
 /* HERO */
@@ -179,17 +204,13 @@ button {
   background-size: cover;
 }
 
-/* PRODUCT */
+/* Use-cases */
 
-/* Stel je voor */
-
-#product {
-  background-color: var(--blue);
-}
-
-.text-white>h1, .text-white>h2, .text-white>h3, .text-white>p {
+.text-white>h1, .text-white>h2, .text-white>p {
   color: var(--white);
 }
+
+/* PRODUCT */
 
 video {
   display: block;
@@ -203,7 +224,16 @@ video {
   width: 100%;
 }
 
-.interaction>h2 {
+#product {
+  padding: 5em 13em;
+}
+
+#product>h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.animation>h2 {
   margin-top: 2em;
   text-align: center;
   font-weight: 700;
@@ -266,11 +296,11 @@ input:checked + .slider:before {
 }
 
 .slider.round {
-  border-radius: 34px;
+  border-radius: 2em;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+  border-radius: 1em;
 }
 
 /* Missie */
@@ -280,14 +310,14 @@ input:checked + .slider:before {
   padding: 5em 0;
 }
 
-.missie>h3 {
+.missie>h2 {
   text-align: center;
   font-weight: 500;
   font-size: 1.5625rem;
   color: var(--white);
 }
 
-.missie>h4 {
+.missie>h3 {
   text-align: center;
   font-weight: 600;
   font-size: 3.125rem;
@@ -312,12 +342,6 @@ input:checked + .slider:before {
     height: 45px;
   }
 
-  .svg-small {
-    height: 1.25em;
-    width: auto;
-    margin-right: 0;
-  }
-
   .primary-header {
     position: fixed;
     padding: 0 5em;
@@ -329,7 +353,7 @@ input:checked + .slider:before {
     height: 5.25em;
     background-color: white;
     width: 100%;
-		z-index: 2;
+		z-index: 3;
   }
   
   .primary-navigation {
@@ -348,31 +372,99 @@ input:checked + .slider:before {
 
 	/* HERO */
 	#hero {
-		padding: 9.75em 0 9.75em 14em;
+		padding: 9.9em 0 9.9em 13em;
     background: linear-gradient(rgba(var(--background-blue), 0.7), rgba(var(--background-blue), 0.7)), url(../assets/locatie-gif.gif);
     background-repeat: no-repeat;
     background-size: cover;
 	}
 
-  /* PRODUCT */
+  /* Use-cases */
 
-  #product {
-    padding: 5em 14em;
+  .stel-je-voor {
+    padding: 5em 13em;
   }
 
   .stel {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 5em;
+    gap: 4em;
   }
 
   .flex-item-left {
     grid-template-columns: 1/2;
+    perspective: 2000px;
+    transform-style: preserve-3d;
+  /* transition:all .2s ease; */
+  }
+
+  .text-purple {
+    color: var(--blue);
   }
 
   .stel>p {
     grid-template-columns: 2/3;
   }
+
+  #use-cases {
+    background-color: var(--blue);
+    padding: 5em 13em;
+  }
+
+  .use-cases-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 4em;
+  }
+
+  .option, .option-two {
+    position: relative;
+    padding: 0 2em 2em 2em;
+    margin-top: -8em;
+    background-color: var(--white);
+    z-index: 2;
+    transition: all 0.8s ease;
+  }
+
+  .option-move-down {
+    transform: translateY(70px);
+    margin-bottom: 5em;
+  }
+
+  .two {
+    transform: translateY(70px);
+    margin-bottom: 5em;
+  }
+
+  #use-cases>h2 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  .use-case-image {
+    position: relative;
+    width:100%;
+    z-index: 1;
+    transition: all .4s ease;
+  }
+
+  .toggle {
+    display: block;
+  margin-left:  auto;
+  margin-right: 0;
+  }
+
+  .toggle-two {
+    display: block;
+  margin-left:  auto;
+  margin-right: 0;
+  }
+
+  .image-size {
+    height: 346.83px;
+  }
+
+  /* PRODUCT */
   
   video {
     display: block;

@@ -1,9 +1,25 @@
 // MOUSE ANIMATION
 
-// var card = document.querySelector(".card");
+let container = document.querySelector('.flex-item-left');
 
-// document.querySelector(document).addEventListener("mousemove",function(e) {  
-//   var ax = -(document.querySelector(window).innerWidth()/2- e.pageX)/20;
-//   var ay = (document.querySelector(window).innerHeight()/2- e.pageY)/10;
-//   card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-webkit-transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-moz-transform: rotateY("+ax+"deg) rotateX("+ay+"deg)");
-// });
+document.body.addEventListener('mousemove', (e) =>{
+
+  let x = (window.innerWidth / 2 - e.pageX) / 55;
+  let y = (window.innerHeight / 2 - e.pageY) / 55;
+
+  container.style.transform = `rotateX(${-y}deg) rotateY(${-x}deg)`;
+});
+
+const option = document.querySelector('.option');
+const toggle = document.querySelector('.toggle');
+
+toggle.addEventListener('click', () => {
+    option.classList.toggle('option-move-down');
+})
+
+const two = document.querySelector('.option-two');
+const toggleTwo = document.querySelector('.toggle-two');
+
+toggleTwo.addEventListener('click', () => {
+  two.classList.toggle('two');
+})
