@@ -413,7 +413,6 @@ input:checked + .slider:before {
   gap: 1em;
   justify-content:left;
   overflow-x:scroll;
-  background-color: var(--blue);
 }
 
 .updates-horizontal-scroll>article {
