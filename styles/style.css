@@ -2,7 +2,7 @@
 :root {
   --dark-blue: #110f2a ;
   --blue: #524dd0;
-  --cyaan: #00ffec;
+  --cyan: #00ffec;
   --gradient: linear-gradient(to right, #524dd0, #84389e);
   --white: #fff;
   --black: #000;
@@ -233,6 +233,76 @@ video {
 
 .illustration {
   width: 100%;
+}
+
+/* .animation>p {
+  font-weight: 600;
+  line-height: 1.1;
+  font-size: 3.125rem;
+  margin: 0 auto; 
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: .15em;
+}
+
+.animation>p:nth-child(1) {
+  margin-top: 2rem;
+  margin-left: 5em;
+  animation: typing 10s 5s steps(13, end) infinite;
+}
+
+.animation>p:nth-child(2) {
+  margin-top: 2rem;
+  margin-left: 20em;
+  animation: typing 10s 0s steps(13, end) infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+} */
+
+.text_1 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter;
+  display: inline-block;
+  position: absolute;
+  animation-duration: 8s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+}
+.text_1::after {
+  content: "\007C";
+  font-size: 2rem;
+  position: absolute;
+  margin-top: -4px;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+
+@keyframes typewriter {
+  0%, 100% {
+    width: 0;
+  }
+  20%, 80% {
+    width: 8em;
+  }
+}
+@keyframes caret {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 #product {
@@ -511,6 +581,42 @@ input:checked + .slider:before {
     grid-template-columns: 1/2;
   }
 
+  .typewriter {
+    color: #524dd0;
+    position: absolute;
+    overflow: hidden; 
+    width:100%;
+    display:block;
+    border-right: .15em solid; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: moving 4s steps(19, end) infinite, 
+             blinking .8s steps(1) infinite;
+  }
+
+  @keyframes moving {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 21ch;
+    }
+  }
+
+  @keyframes blinking {
+    0%, 100% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #524dd0;
+      }
+  }
+
+  span.typewriter::before {
+    content: "\00a0";
+  }
+
   .text-blue {
     color: var(--blue);
   }
@@ -526,7 +632,11 @@ input:checked + .slider:before {
 
   #use-cases>h2 {
     text-align: center;
-    margin-bottom: 1em;
+  }
+
+  #use-cases>p {
+    text-align: center;
+    margin-bottom: 2em;
   }
 
   .use-cases-grid {
