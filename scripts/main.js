@@ -1,15 +1,3 @@
-// MOUSE ANIMATION
-
-let container = document.querySelector('.mouse-animation');
-
-document.body.addEventListener('mousemove', (e) =>{
-
-  let x = (window.innerWidth / 2 - e.pageX) / 10;
-  let y = (window.innerHeight / 2 - e.pageY) / 10;
-
-  container.style.transform = `rotateX(${-y}deg) rotateY(${-x}deg)`;
-});
-
 // IMAGE ANIMATION
 
 const option = document.querySelector('.option-one');
@@ -35,4 +23,31 @@ toggleThree.addEventListener('click', () => {
 
 toggleFour.addEventListener('click', () => {
   four.classList.toggle('option-four-move-down');
+})
+
+// MOUSE ANIMATION
+
+let container = document.querySelector('.mouse-animation');
+
+document.body.addEventListener('mousemove', (e) => {
+  let x = (window.innerWidth / 2 - e.pageX) / 30;
+  let y = (window.innerHeight / 2 - e.pageY) / 180;
+
+  container.style.transform = `rotateX(${-y}deg) rotateY(${-x}deg)`;
+});
+
+// TABS
+const show = document.querySelector('.show');
+const button = document.querySelector('.cta-blue-information');
+const showtwo = document.querySelector('.show-two');
+const buttontwo = document.querySelector('.cta-blue-information-two');
+
+button.addEventListener('click', () => {
+    show.style.display = "block";
+    showtwo.style.display = "none";
+})
+
+buttontwo.addEventListener('click', () => {
+    showtwo.style.display = "block";
+    show.style.display = "none";
 })
