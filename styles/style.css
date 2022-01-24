@@ -25,11 +25,6 @@ body {
   font-weight: 500;
 
   color: var(--text-color);
-  max-width: 100%;
-}
-
-main{
-  margin-top: 5.25em;
 }
 
 ::selection {
@@ -135,7 +130,6 @@ button {
   display: block;
   width: 15em;
   margin: 2em 0 2em 1em;
-  opacity: 1;
 }
 
 a {
@@ -152,8 +146,8 @@ header a {
   color: var(--blue);
 }
 
-section #hero {
-  color: var(--white);
+.active {
+  background: silver;
 }
 
 .primary-navigation>select {
@@ -179,6 +173,10 @@ section #hero {
 }
 
 /* HERO */
+
+section #hero {
+  color: var(--white);
+}
 
 #hero>h1 {
   color: var(--white);
@@ -229,55 +227,74 @@ video {
   margin: 0 auto;
 }
 
+.imagine-two {
+  padding: 5em 13em;
+  background-color: var(--blue);
+}
+
 /* Illustration */
 
 .illustration {
   width: 100%;
 }
 
-/* .animation>p {
-  font-weight: 600;
-  line-height: 1.1;
-  font-size: 3.125rem;
-  margin: 0 auto; 
-  position: absolute;
+.type {
+  display:inline-block;
+}
+
+.type > span {
+  display: grid;
+  overflow: hidden;
+  height:1.2em;
+}
+
+.type span span {
+  width:0%;
+  max-width:max-content;
+  overflow: hidden;
+  height:inherit;
+  word-break:break-all;
+  animation:
+    cursor 0.5s infinite steps(1),
+    type 2s linear infinite alternate,
+    move 16s steps(4) infinite;
+}
+.type span span:before {
+  content:" ";
+  display:inline-block;
+}
+
+@keyframes cursor{
+  0%,100%{box-shadow:2px 0 0 white}
+  50%    {box-shadow:2px 0 0 black}
+}
+
+@keyframes type{
+  90%,100% {width:100%}
+}
+
+@keyframes move{
+  100% {transform:translateY(-400%)}
+}
+/* .text_1 {
+  animation: text1;
+}
+
+.text_2 {
+  animation: text2;
+}
+
+.text_1, .text_2{
   overflow: hidden;
   white-space: nowrap;
-  letter-spacing: .15em;
-}
-
-.animation>p:nth-child(1) {
-  margin-top: 2rem;
-  margin-left: 5em;
-  animation: typing 10s 5s steps(13, end) infinite;
-}
-
-.animation>p:nth-child(2) {
-  margin-top: 2rem;
-  margin-left: 20em;
-  animation: typing 10s 0s steps(13, end) infinite;
-}
-
-@keyframes typing {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 100%;
-  }
-} */
-
-.text_1 {
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typewriter;
   display: inline-block;
   position: absolute;
-  animation-duration: 8s;
+  animation-duration: 12s;
   animation-timing-function: steps(25, end);
   animation-iteration-count: infinite;
 }
-.text_1::after {
+
+.text_1::after, .text_2::after {
   content: "\007C";
   font-size: 2rem;
   position: absolute;
@@ -288,14 +305,28 @@ video {
   animation-timing-function: steps(1, end);
 }
 
-@keyframes typewriter {
-  0%, 100% {
+.text_1::before, .text_2::before{
+  content: "\00a0";
+}
+
+@keyframes text2 {
+  0%, 50%, 100% {
     width: 0;
   }
-  20%, 80% {
+  60%, 90% {
+    width: 7.5em;
+  }
+}
+
+@keyframes text1 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  10%, 40% {
     width: 8em;
   }
 }
+
 @keyframes caret {
   0%, 100% {
     opacity: 0;
@@ -303,7 +334,7 @@ video {
   50% {
     opacity: 1;
   }
-}
+} */
 
 #product {
   padding: 5em 13em;
@@ -470,15 +501,17 @@ input:checked + .slider:before {
 
 /* UPDATES */
 
-#updates {
-  padding: 5em 13em ;
+.imagine-three {
+  padding: 5em 13em;
+  background-color: var(--blue);
 }
 
-#updates>h2 {
+#updates>h2, #updates>p {
   text-align: center;
 }
 
 .updates-horizontal-scroll {
+  margin-top: 2em;
   display:flex;
   gap: 1em;
   justify-content:left;
@@ -559,7 +592,7 @@ input:checked + .slider:before {
 
 	/* HERO */
 	#hero {
-		padding: 10.5em 0 10em 10.5em;
+		padding: 15.5em 0 10em 15.5em;
     background: linear-gradient(rgba(var(--background-blue), 0.7), rgba(var(--background-blue), 0.7)), url(../assets/locatie-gif.gif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -567,11 +600,8 @@ input:checked + .slider:before {
 
   /* Use-cases */
 
-  .stel-je-voor {
+  .imagine {
     padding: 5em 13em;
-  }
-
-  .stel {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4em;
@@ -579,6 +609,8 @@ input:checked + .slider:before {
 
   .flex-item-left {
     grid-template-columns: 1/2;
+    transform-style: preserve-3d;
+    transition:all 2s linear;
   }
 
   .typewriter {
@@ -619,10 +651,6 @@ input:checked + .slider:before {
 
   .text-blue {
     color: var(--blue);
-  }
-
-  .stel>p {
-    grid-template-columns: 2/3;
   }
 
   #use-cases {
@@ -696,7 +724,7 @@ input:checked + .slider:before {
     margin: 0 auto;
   }
 
-  .stel {
+  .imagine-two {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4em;
@@ -723,9 +751,14 @@ input:checked + .slider:before {
 
   /* UPDATES */
 
-  .stel-je-voor-two {
-    padding: 5em 13em;
-    background-color: var(--blue);
+  #updates {
+    padding: 5em 13em ;
+  }
+
+  .imagine-three {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4em;
   }
 
   /* #updates {

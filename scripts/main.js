@@ -1,3 +1,20 @@
+// NAVIGATION ACTIVE SCROLL
+// https://stackoverflow.com/questions/52025615/vanilla-js-change-active-state-of-links-when-scrolling-refactoring
+const links = document.querySelectorAll('.links');
+const sections = document.querySelectorAll('section');
+
+function changeLinkState() {
+  let index = sections.length;
+
+  while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
+  
+  links.forEach((link) => link.classList.remove('active'));
+  links[index].classList.add('active');
+}
+
+changeLinkState();
+window.addEventListener('scroll', changeLinkState);
+
 // IMAGE ANIMATION
 
 const option = document.querySelector('.option-one');
@@ -51,3 +68,14 @@ buttontwo.addEventListener('click', () => {
     showtwo.style.display = "block";
     show.style.display = "none";
 })
+
+// MOUSE ANIMATION FOR IMAGINE
+
+let container = document.querySelector('.flex-item-left');
+
+document.body.addEventListener('mousemove', (e) => {
+  let x = (window.innerWidth / 2 - e.pageX) / 30;
+  let y = (window.innerHeight / 2 - e.pageY) / 30;
+
+  container.style.transform = `rotateX(${-y}deg) rotateY(${-x}deg)`;
+});
