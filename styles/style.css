@@ -65,7 +65,7 @@ h3 {
 
 h4 {
   font-family: 'Rajdhani', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.25rem;
   color: var(--text-color);
 }
@@ -73,7 +73,7 @@ h4 {
 p {
   font-family: 'Rajdhani', sans-serif;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.4;
   font-size: 1.1875rem;
   color: var(--text-color);
 }
@@ -103,26 +103,6 @@ button {
   color: var(--blue);
 }
 
-.cta-white {
-  margin-top: 1.5em;
-  padding: 0.7em 3em;
-  background-color: var(--white);
-  border-radius: 2em;
-  overflow: hidden;
-}
-
-.cta-white:hover {
-  background-color: var(--blue);
-}
-
-.cta-white a {
-  color: var(--text-color);
-}
-
-.cta-white:hover a {
-  color: var(--white);
-}
-
 /* NAVIGATION */
 
 .logo {
@@ -146,8 +126,8 @@ header a {
   color: var(--blue);
 }
 
-.active {
-  background: silver;
+ .active {
+  color: var(--blue);
 }
 
 .primary-navigation>select {
@@ -182,11 +162,11 @@ section #hero {
   color: var(--white);
 }
 
-.font-size-heading-small {
+#hero>h2 {
   font-size: 2.5rem;
 }
 
-.font-size-paragraph-big {
+#hero>p {
   font-size: 1.5625rem;
 }
 
@@ -198,6 +178,14 @@ section #hero {
 }
 
 /* Use-cases */
+
+.option-one>h3, .option-two>h3, .option-three>h3, .option-four>h3 {
+  color: var(--blue);
+}
+
+.option-one>h4, .option-two>h4, .option-three>h4, .option-four>h4 {
+  margin-bottom: 0.25em;
+}
 
 .text-white>h1, .text-white>h2, .text-white>h3, .text-white>p {
   color: var(--white);
@@ -276,65 +264,6 @@ video {
 @keyframes move{
   100% {transform:translateY(-400%)}
 }
-/* .text_1 {
-  animation: text1;
-}
-
-.text_2 {
-  animation: text2;
-}
-
-.text_1, .text_2{
-  overflow: hidden;
-  white-space: nowrap;
-  display: inline-block;
-  position: absolute;
-  animation-duration: 12s;
-  animation-timing-function: steps(25, end);
-  animation-iteration-count: infinite;
-}
-
-.text_1::after, .text_2::after {
-  content: "\007C";
-  font-size: 2rem;
-  position: absolute;
-  margin-top: -4px;
-  right: 0;
-  animation: caret infinite;
-  animation-duration: 1s;
-  animation-timing-function: steps(1, end);
-}
-
-.text_1::before, .text_2::before{
-  content: "\00a0";
-}
-
-@keyframes text2 {
-  0%, 50%, 100% {
-    width: 0;
-  }
-  60%, 90% {
-    width: 7.5em;
-  }
-}
-
-@keyframes text1 {
-  0%, 50%, 100% {
-    width: 0;
-  }
-  10%, 40% {
-    width: 8em;
-  }
-}
-
-@keyframes caret {
-  0%, 100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-} */
 
 #product {
   padding: 5em 13em;
@@ -592,7 +521,7 @@ input:checked + .slider:before {
 
 	/* HERO */
 	#hero {
-		padding: 15.5em 0 10em 15.5em;
+		padding: 16.5em 0 10em 16.5em;
     background: linear-gradient(rgba(var(--background-blue), 0.7), rgba(var(--background-blue), 0.7)), url(../assets/locatie-gif.gif);
     background-repeat: no-repeat;
     background-size: cover;
