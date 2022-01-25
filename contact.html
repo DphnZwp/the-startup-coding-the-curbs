@@ -6,39 +6,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Coding the Curbs website.">
         <link rel="stylesheet" href="styles/style.css" />
+				<link rel="stylesheet" href="styles/contact.css" />
         <!-- FONTS -->
         <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <title>Coding the Curbs | Contact</title>
     </head>
 <body>
-    <header class="primary-header flex">
-		<a href="#hero">
+    <header class="primary-header">
+		<a class="links" href="index.html#hero">
 			<img class="logo" src="assets/ctc-primary-logo-black.svg" alt="logo">
 		</a>
-		<nav class="wrapper">
-			<ul class="primary-navigation flex">
+		<nav>
+			<ul class="primary-navigation">
 				<li>
-					<a class="hover-color" href="index.html#use-cases">
+					<a class="links hover-color" href="index.html#use-cases">
 						Use-cases
 					</a>
 				</li>
 				<li>
-					<a class="hover-color active" href="index.html#product">
+					<a class="links hover-color" href="index.html#product">
 					Product
 					</a>
 				</li>
 				<li>
-					<a class="hover-color" href="index.html#services">
+					<a class="links hover-color" href="index.html#services">
 					Services
 					</a>
 				</li>
 				<li>
-					<a class="hover-color" href="index.html#updates">
+					<a class="links hover-color" href="index.html#updates">
 					Updates
 					</a>
 				</li>
 				<li>
-					<a class="hover-color" href="index.html#over-ons">
+					<a class="links hover-color" href="index.html#about">
 					Over ons
 					</a>
 				</li>
@@ -48,7 +49,7 @@
 					</a>
 				</li>
 				<button class="cta-gradient">
-					<a class="text-white" href="#">
+					<a class="text-white" href="contact.html">
 					Sluit je aan
 					</a>
 				</button>
@@ -60,9 +61,81 @@
 			</ul>
 		</nav>
 	</header>
-    <main>
-        <h1>Contact</h1>
-        <p>Blablabla</p>
-    </main>
+	<main>
+		<section class="contact">
+			<h1>Contact</h1>
+			<p>Wij zijn altijd op zoek naar innovators en challengers. Wij zoeken mensen die vooruit durven te
+				lopen en graag bouwen aan de slimme stad. Wij praten graag met je verder. Neem contact met
+				ons op via het onderstaande formulier of vraag direct een opportunity scan aan.
+			</p>
+		</section>
+		<section class="contact-form">
+			<form action="#" method="POST">
+				<Label for="name">Naam:</Label>
+				<input type="text" id="name" required>
+				<Label for="e-mail">E-mail:</Label>
+				<input type="email" id="email" required>
+				<Label for="company">Bedrijf:</Label>
+				<input type="text" id="company">
+				<Label for="message">Bericht:</Label>
+				<textarea name="message" id="message" placeholder="Typ hier een bericht..." cols="20" rows="15" required></textarea>
+				<br>
+				<button class="contact-button cta-gradient"> 
+					<a href="#">Verstuur</a>
+				</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<div class="footer-content">
+		<a href="index.html#hero">
+			<img class="logo-footer" src="assets/CTC_Primary_Logo_White.svg" alt="logo">
+		</a>
+			<p>All rights reserved © 2021&nbsp;</p>
+			<a href="http://www.fronteer.com" target="_blank">fronteer</a>, 
+			<a href="https://www.codingthecurbs.com/copy-of-roll-out-plan?lang=nl" target="_self">Privacy statement</a>
+		</div>
+		<ul class="footer-navigation">
+			<li>
+				<a class="footer-link" href="index.html#use-cases">
+					Use-cases
+				</a>
+			</li>
+			<li>
+				<a class="footer-link" href="index.html#product">
+				Product
+				</a>
+			</li>
+			<li>
+				<a class="footer-link" href="index.html#services">
+				Services
+				</a>
+			</li>
+			<li>
+				<a class="footer-link" href="index.html#updates">
+				Updates
+				</a>
+			</li>
+			<li>
+				<a class="footer-link" href="index.html#about">
+				Over ons
+				</a>
+			</li>
+			<li>
+				<a class="footer-link" href="contact.html">
+				Contact
+				</a>
+			</li>
+			</ul>
+			<div class="logos-footer">
+				<img class="logo-fronteer" src="https://static.wixstatic.com/media/21dd0d_93ea25df766a4b708c7095e76057a346~mv2.png/v1/fill/w_118,h_25,al_c,q_95/Logo%20White%20RGB.webp" alt="">
+				<img src="https://static.wixstatic.com/media/21dd0d_1cf6e7b130544d54ae553ea81a58257d~mv2.png/v1/fill/w_113,h_50,al_c,q_95/Logo%20FMN%20white.webp" alt="">
+			</div>
+		<button class="footer-button cta-gradient">
+			<a href="contact.html">
+			Sluit je aan
+			</a>
+		</button>
+	</footer>
 </body>
 </html>
