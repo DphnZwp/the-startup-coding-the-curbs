@@ -344,9 +344,6 @@ input:checked + .slider:before {
   border-radius: 1em;
 }
 
-/* Mission */
-
-
 
 /* Information */
 
@@ -398,24 +395,26 @@ input:checked + .slider:before {
   display: block;
 }
 
-.padding-show {
-  padding: 3em 20em 3em 3em;
-}
-
-.show {
-  background-color: var(--blue);
+.show, .show-two {
   margin: 0 13em 5em 13em;
+  padding: 3em 3em 3em 3em;
+  background-color: var(--blue);
   display: block;
 }
 
 .show-two {
-  background-color: var(--blue);
   margin: 0 13em 5em 13em;
+  background-color: var(--blue);
   display: none;
 }
 
-.show>img, .show-two>img {
+.information>img {
+  margin-top: 3em;
   width: 100%;
+}
+
+.information>p {
+  width: 80%;
 }
 
 /* SERVICES */
@@ -690,7 +689,59 @@ input:checked + .slider:before {
     gap: 4em;
   }
 
-  /* #updates {
-    padding: 5em 13em;
-  } */
+  .information-residents, .information-goals {
+    padding: 3em 3em 3em 3em;
+    background-color: var(--blue);
+    display: block;
+  }
+  
+  .information-goals {
+    background-color: var(--blue);
+    display: none;
+  }
+  
+  .image-residents, .image-goals {
+    margin-top: 3em;
+    width: 100%;
+  }
+
+  .cta-blue-info {
+    font-weight: 500;
+    padding: 0.7em 3em;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 2em 2em 0 0;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .cta-blue-info-two {
+    font-weight: 500;
+    padding: 0.7em 3em;
+    background-color: var(--white);
+    color: var(--blue);
+    box-shadow:inset 0 0 0 0.125em var(--blue);
+    border-radius: 2em 2em 0 0;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+  }
+
+  .blue {
+    font-weight: 500;
+    padding: 0.7em 3em;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 2em 2em 0 0;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+  }
+
+  .flex-cta-blue-info {
+    margin: 5em 0 0 0;
+    display: flex;
+    flex-direction: row;
+  }
 }
