@@ -1,4 +1,5 @@
 # 🚐 Coding the Curbs Website
+![Schermafbeelding 2022-01-26 150449](https://user-images.githubusercontent.com/69635977/151177321-ecdd5cfb-418e-426f-a402-5e8ef30f0a3e.png)
 
 ## 📋 Beschrijving
 [🌐 https://daphnecodingthecurbs.student.fdnd.nl](https://daphnecodingthecurbs.student.fdnd.nl/)
@@ -6,7 +7,7 @@
 De oude CTC website heeft een herontwerp nodig, omdat de website niet meer up-to-date is. Hierbij moet het duidelijk zijn wie Coding the Curbs is, wat ze doen en
 waar ze mee bezig zijn. Een van de pijlers voor het ontwerp is interactie en er moet meer terug worden laten zien van het product, services en use-cases.
 
- De website heeft twee pagina's. Op de eerste pagina staat alle belangrijke informatie en de tweede pagina is een contactpagina. Voor de rest hebben ze ook aparte pagina's voor services, updates, een aparte pagina voor het gedeelte "Over ons" en een aparte pagina voor de privacy voorwaarden.
+ De website heeft twee pagina's. Op de eerste pagina staat alle belangrijke informatie en de tweede pagina is een contactpagina. Voor de rest hebben ze ook aparte pagina's voor services, updates en een aparte pagina voor de privacy voorwaarden.
 
 ## 📘 Inhoudsopgave
 
