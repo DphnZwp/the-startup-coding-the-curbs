@@ -43,17 +43,6 @@ toggleFour.addEventListener('click', () => {
   four.classList.toggle('option-four-move-down');
 });
 
-// MOUSE ANIMATION
-
-let container = document.querySelector('.mouse-animation');
-
-document.body.addEventListener('mousemove', (e) => {
-  let x = (window.innerWidth / 2 - e.pageX) / 30;
-  let y = (window.innerHeight / 2 - e.pageY) / 180;
-
-  container.style.transform = `rotateX(${-y}deg) rotateY(${-x}deg)`;
-});
-
 // TABS
 const show = document.querySelector('.show');
 const button = document.querySelector('.cta-blue-information');

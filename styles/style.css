@@ -238,8 +238,36 @@ video {
   width: 100%;
 }
 
-#car {
+.shelter {
+  margin: 40.5em 0 0 17em;
+  position: absolute;
+  width: 6em;
+  z-index: 1;
+}
+
+.car {
+  margin: 47em 0 0 0;
+  position: absolute;
   width: 5em;
+  animation-name: carmove;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  z-index: 0;
+}
+
+@keyframes carmove {
+  0% {
+      transform: translatex(0) translatey(0)
+  }
+  40% {
+      transform: translatex(510px) translatey(-135px);
+  }
+  50% {
+        transform: translatex(510px) translatey(-55px);
+    }
+  100% {
+        transform: translatex(510px) translatey(-55px);
+    }
 }
 
 .type {
