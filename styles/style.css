@@ -484,8 +484,18 @@ input:checked + .slider:before {
 
 /* ABOUT */
 
-#about>h2, #about>p {
+#about>h2 {
+  margin-bottom: 0.25em;
   text-align: center;
+}
+
+.text-about {
+  padding: 3em;
+  background-color: var(--blue);
+}
+
+.text-about>p {
+  color: var(--white);
 }
 
 /* FOOTER */
