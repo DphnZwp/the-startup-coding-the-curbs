@@ -238,6 +238,10 @@ video {
   width: 100%;
 }
 
+#car {
+  width: 5em;
+}
+
 .type {
   display:inline-block;
 }
@@ -429,6 +433,10 @@ input:checked + .slider:before {
   width: 80%;
 }
 
+.information>p:nth-child(1) {
+  margin-bottom: 1rem;
+}
+
 /* SERVICES */
 
 #services>h2, #services>p {
@@ -494,7 +502,15 @@ input:checked + .slider:before {
   background-color: var(--blue);
 }
 
-.text-about>p {
+.text-about>p:nth-child(1),
+.text-about>p:nth-child(2),
+.text-about>p:nth-child(3) {
+  color: var(--white);
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.text-about>p:nth-child(4) {
   color: var(--white);
 }
 
