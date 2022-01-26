@@ -1,4 +1,5 @@
 # 🚐 Coding the Curbs Website
+![Schermafbeelding 2022-01-26 150223](https://user-images.githubusercontent.com/69635977/151176949-4b96e2bf-309c-4f29-8242-cad5219083a6.png)
 
 ## 📋 Beschrijving
 [🌐 https://daphnecodingthecurbs.student.fdnd.nl](https://daphnecodingthecurbs.student.fdnd.nl/)
