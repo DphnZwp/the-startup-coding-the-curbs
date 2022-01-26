@@ -138,6 +138,10 @@ header a {
   color: var(--blue);
 }
 
+.active-contact-link {
+  color: var(--blue);
+}
+
 .primary-navigation>select {
   font-weight: 500;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9.283 4.898'%3E%3Cpath d='M4.641 4.898a.5.5 0 01-.343-.136L.158.864A.5.5 0 01.842.136L4.64 3.712 8.44.136a.5.5 0 01.686.729L4.984 4.762a.5.5 0 01-.343.136z'%3E%3C/path%3E%3C/svg%3E");
@@ -500,6 +504,10 @@ footer {
   text-decoration: underline;
 }
 
+.footer-link:hover {
+  text-decoration-color: var(--blue);
+}
+
 /* CONTACT */
 
 input {
@@ -793,8 +801,6 @@ textarea {
 
   /* ABOUT */
 
-  /* Initiatief */
-
 .initiatief {
   padding: 5em 0;
 }
@@ -837,14 +843,14 @@ textarea {
   /* FOOTER */
 
   footer {
-    padding: 3em 5em;
+    padding: 3em 13em;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
 
   .logo-footer {
     display: block;
-    width: 8.125em;
+    width: 11em;
   }
 
   .logos-footer>img {
@@ -868,6 +874,10 @@ textarea {
   .footer-content>a {
     color: var(--white);
     text-decoration: underline;
+  }
+
+  .footer-content>a:hover {
+    text-decoration-color: var(--blue);
   }
 
   /* CONTACT PAGINA */
