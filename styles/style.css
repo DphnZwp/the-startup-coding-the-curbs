@@ -513,6 +513,7 @@ input:checked + .slider:before {
 }
 
 .livability-image, .infrastructure-image {
+  display: block;
   width: 100%;
 }
 
@@ -629,6 +630,7 @@ border-radius: 2em;
 }
 
 .image-residents, .image-goals {
+  display: block;
   width: 100%;
 }
 
