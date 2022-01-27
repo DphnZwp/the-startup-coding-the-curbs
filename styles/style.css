@@ -202,6 +202,10 @@ section #hero {
   font-size: 1.5625rem;
 }
 
+.imagine {
+  padding: 2em 1em;
+}
+
 .type {
   display:inline-block;
 }
@@ -703,7 +707,12 @@ footer {
 }
 
 .logos-footer {
+  margin-top: 1em;
   text-align: center;
+}
+
+.logo-fronteer {
+  margin-right: 1em;
 }
 
 .footer-button {
@@ -1110,6 +1119,7 @@ textarea {
   }
 
   .logos-footer {
+    margin-top: 0;
     text-align: left;
   }
 
@@ -1118,6 +1128,7 @@ textarea {
   }
 
   .logo-fronteer {
+    margin-right: 0;
     margin-bottom: 1em;
   }
 
