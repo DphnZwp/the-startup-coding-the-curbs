@@ -29,7 +29,7 @@ body {
 }
 
 main {
-  margin-top:5.25em;
+  margin-top:0;
 }
 
 ::selection {
@@ -65,7 +65,7 @@ h3 {
   font-weight: 600;
   font-size: 1.5625rem;
   color: var(--text-color);
-}Z
+}
 
 p {
   font-family: 'Rajdhani', sans-serif;
@@ -85,6 +85,7 @@ button {
 }
 
 .cta-gradient {
+  width: max-content;
   font-weight: 500;
   padding: 0.7em 3em;
   background-image: var(--cta-color);
@@ -106,8 +107,13 @@ button {
 
 /* NAVIGATION */
 
+header {
+  background-color: var(--white);
+  width: 100%;
+}
+
 .logo {
-  position:absolute;
+  position:relative;
   display: block;
   width: 15em;
   margin: 2em 0 2em 1em;
@@ -117,10 +123,15 @@ a {
   color: var(--text-color);
   font-weight: 500;
   text-decoration: none;
+  line-height: 2;
 }
 
 header a {
   font-size: 1.1em;
+}
+
+li {
+  list-style: none;
 }
 
 .hover-color:hover, .hover-color:hover {
@@ -155,6 +166,13 @@ header a {
 .primary-navigation>select:hover {
   border: 0.125em solid var(--blue);
   color: var(--blue);
+}
+
+.primary-navigation {
+  margin: 0 0 3em 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--white);
 }
 
 /* HERO */
@@ -440,7 +458,7 @@ input:checked + .slider:before {
 }
 
 .cta-gradient-information {
-  margin-top: 1em;
+  margin: 1em 0;
   padding: 0.7em 3em;
   color: white;
   font-weight: 500;
@@ -462,7 +480,7 @@ input:checked + .slider:before {
 }
 
 .cta-gradient-information-two {
-  margin-top: 1em;
+  margin: 1em 0;
   padding: 0.7em 3em;
   color: white;
   font-weight: 500;
@@ -484,6 +502,7 @@ input:checked + .slider:before {
 }
 
 .show, .show-two {
+  margin: 3em 0;
   background-color: var(--white);
   display: block;
 }
@@ -529,6 +548,10 @@ input:checked + .slider:before {
 .imagine-three>div>h3 {
   color: var(--white);
   max-width: 21em;
+}
+
+#updates {
+  padding: 1em 1em;
 }
 
 #updates>h2, #updates>p {
@@ -735,6 +758,10 @@ textarea {
     justify-content: space-between;
   }
 
+  main {
+    margin-top:5.25em;
+  }
+
   br {
     display: block;
   }
@@ -763,6 +790,7 @@ textarea {
   }
   
   .primary-navigation {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -778,7 +806,7 @@ textarea {
 
 	/* HERO */
 	#hero {
-		padding: 10.5em 0 10.5em 13em;
+		padding: 10.2em 0 10.2em 13em;
     background: linear-gradient(rgba(var(--background-blue), 0.7), rgba(var(--background-blue), 0.7)), url(../assets/locatie-gif.gif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -984,7 +1012,7 @@ textarea {
   /* UPDATES */
 
   #updates {
-    padding: 5em 13em ;
+    padding: 5em 13em;
   }
 
   .imagine-three {

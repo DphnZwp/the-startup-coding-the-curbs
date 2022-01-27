@@ -47,7 +47,7 @@ toggleFour.addEventListener('click', () => {
   toggleFour.classList.toggle('rotate')
 });
 
-// TABS
+// INFORMATION
 const show = document.querySelector('.show');
 const button = document.querySelector('.cta-gradient-information');
 const showtwo = document.querySelector('.show-two');
@@ -63,7 +63,6 @@ buttontwo.addEventListener('click', () => {
     show.style.display = "none";
 });
 
-// TABS TWO
 const showinfo = document.querySelector('.information-residents');
 const buttoninfo = document.querySelector('.cta-gradient-info');
 const showinfotwo = document.querySelector('.information-goals');
