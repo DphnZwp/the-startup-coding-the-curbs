@@ -189,86 +189,7 @@ section #hero {
   background-size: cover;
 }
 
-/* Use-cases */
-
-.option-one>h3, .option-two>h3, .option-three>h3, .option-four>h3 {
-  color: var(--blue);
-}
-
-.option-one>h4, .option-two>h4, .option-three>h4, .option-four>h4 {
-  margin-bottom: 0.25em;
-}
-
-.text-white>h1, .text-white>h2, .text-white>h3, .text-white>p {
-  color: var(--white);
-}
-
-.cta-blue {
-  display: block;
-  padding: 0.7em 3em;
-  background-color: var(--blue);
-  color: var(--white);
-  border-radius: 0 0 2em 2em;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.cta-blue:hover {
-  background-color: var(--white);
-  box-shadow:inset 0 0 0 0.125em var(--blue);
-  color: var(--text-color);
-}
-
-/* PRODUCT */
-
-video {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.imagine-two {
-  padding: 5em 13em;
-  background-color: var(--blue);
-}
-
-/* Illustration */
-
-.illustration {
-  width: 100%;
-}
-
-.shelter {
-  margin: 40.5em 0 0 17em;
-  position: absolute;
-  width: 6em;
-  z-index: 1;
-}
-
-.car {
-  margin: 47em 0 0 0;
-  position: absolute;
-  width: 5em;
-  animation-name: carmove;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  z-index: 0;
-}
-
-@keyframes carmove {
-  0% {
-      transform: translatex(0) translatey(0)
-  }
-  40% {
-      transform: translatex(510px) translatey(-135px);
-  }
-  50% {
-        transform: translatex(510px) translatey(-55px);
-    }
-  100% {
-        transform: translatex(510px) translatey(-55px);
-    }
-}
+/* Stel je voor */
 
 .type {
   display:inline-block;
@@ -307,6 +228,96 @@ video {
 
 @keyframes move{
   100% {transform:translateY(-400%)}
+}
+
+/* Use-cases */
+
+.option-one>h3, .option-two>h3, .option-three>h3, .option-four>h3 {
+  color: var(--blue);
+}
+
+.option-one>h4, .option-two>h4, .option-three>h4, .option-four>h4 {
+  margin-bottom: 0.25em;
+}
+
+.text-white>h1, .text-white>h2, .text-white>h3, .text-white>p {
+  color: var(--white);
+}
+
+.cta-blue {
+  font-size: 4rem;
+  display: block;
+  height: 0.6em;
+  padding: 0 0.5em;
+  background-image: var(--cta-color);
+  color: var(--white);
+  border-radius: 0 0 2em 2em;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.rotate {
+  font-size: 4rem;
+  display: block;
+  height: 0.6em;
+  padding: 0 0.5em;
+  background-image: var(--cta-color);
+  color: var(--white);
+  border-radius: 2em 2em 0 0;
+  overflow: hidden;
+  cursor: pointer;
+  rotate: 180deg;
+}
+
+/* PRODUCT */
+
+video {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.imagine-two {
+  padding: 5em 13em;
+  background-color: var(--blue);
+}
+
+/* Illustration */
+
+.illustration {
+  width: 100%;
+}
+
+.shelter {
+  margin: 40em 0 0 17em;
+  position: absolute;
+  width: 6em;
+  z-index: 1;
+}
+
+.car {
+  margin: 47em 0 0 0;
+  position: absolute;
+  width: 5em;
+  animation-name: carmove;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  z-index: 0;
+}
+
+@keyframes carmove {
+  0% {
+      transform: translatex(0) translatey(0)
+  }
+  40% {
+      transform: translatex(510px) translatey(-135px);
+  }
+  50% {
+        transform: translatex(510px) translatey(-55px);
+    }
+  100% {
+        transform: translatex(510px) translatey(-55px);
+    }
 }
 
 #product {
@@ -404,65 +415,131 @@ input:checked + .slider:before {
 }
 
 .mission>h3 {
+  margin: 0 auto;
   text-align: center;
   font-weight: 600;
   font-size: 3.125rem;
   color: var(--white);
+  line-height: 1;
+  max-width: 13.8em;
+}
+
+.text_1 {
+  top: 0.25em;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter;
+  display: inline-block;
+  position: relative;
+  animation-duration: 10s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+}
+.text_1::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+
+@keyframes typewriter {
+  0%, 100% {
+    width: 0;
+  }
+  20%, 80% {
+    width: 5.5em;
+  }
+}
+@keyframes caret {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 .flex-cta-blue {
-  margin: 5em 0 0 13em;
+  margin: 5em 0 0 3em;
   display: flex;
   flex-direction: row;
 }
 
-.cta-blue-information {
-  font-weight: 500;
-  padding: 0.7em 3em;
+.information {
+  padding: 5em 13em;
   background-color: var(--blue);
-  color: var(--white);
-  border-radius: 2em 2em 0 0;
-  overflow: hidden;
-  cursor: pointer;
-  display: block;
 }
 
-.cta-blue-information-two {
-  font-weight: 500;
+.cta-gradient-information {
+  margin-top: 1em;
   padding: 0.7em 3em;
-  background-color: var(--white);
+  color: white;
+  font-weight: 500;
+  background-image: var(--cta-color);
+  border-radius: 2em;
+}
+
+.cta-gradient-information:hover {
+  background: white;
+  box-shadow: inset 0px 0px 0px 2px var(--blue);
+}
+
+.cta-gradient-information a {
+  color: var(--white);
+}
+
+.cta-gradient-information:hover a {
   color: var(--blue);
-  box-shadow:inset 0 0 0 0.125em var(--blue);
-  border-radius: 2em 2em 0 0;
-  overflow: hidden;
-  cursor: pointer;
-  display: block;
+}
+
+.cta-gradient-information-two {
+  margin-top: 1em;
+  padding: 0.7em 3em;
+  color: white;
+  font-weight: 500;
+  background-image: var(--cta-color);
+  border-radius: 2em;
+}
+
+.cta-gradient-information-two:hover {
+  background: white;
+  box-shadow: inset 0px 0px 0px 2px var(--blue);
+}
+
+.cta-gradient-information-two a {
+  color: var(--white);
+}
+
+.cta-gradient-information-two:hover a {
+  color: var(--blue);
 }
 
 .show, .show-two {
-  margin: 0 13em 5em 13em;
-  padding: 3em 3em 3em 3em;
-  background-color: var(--blue);
+  background-color: var(--white);
   display: block;
 }
 
 .show-two {
-  margin: 0 13em 5em 13em;
-  background-color: var(--blue);
+  background-color: var(--white);
   display: none;
 }
 
-.information>img {
-  margin-top: 3em;
+.livability, .infrastructure {
+  padding: 3em 3em 3em 3em;
+}
+
+.livability-image, .infrastructure-image {
   width: 100%;
 }
 
-.information>p {
+.livability>p {
   width: 80%;
 }
 
-.information>p:nth-child(1) {
-  margin-bottom: 1rem;
+.livability-margin {
+  margin-bottom: 1em;
 }
 
 /* SERVICES */
@@ -480,6 +557,10 @@ input:checked + .slider:before {
 .imagine-three {
   padding: 5em 13em;
   background-color: var(--blue);
+}
+
+.imagine-three>.flex-item-left>h3 {
+  max-width: 21em;
 }
 
 #updates>h2, #updates>p {
@@ -649,42 +730,6 @@ textarea {
     transition:all 2s linear;
   }
 
-  .typewriter {
-    color: #524dd0;
-    position: absolute;
-    overflow: hidden; 
-    width:100%;
-    display:block;
-    border-right: .15em solid; 
-    white-space: nowrap; 
-    margin: 0 auto; 
-    letter-spacing: .15em;
-    animation: moving 4s steps(19, end) infinite, 
-             blinking .8s steps(1) infinite;
-  }
-
-  @keyframes moving {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 21ch;
-    }
-  }
-
-  @keyframes blinking {
-    0%, 100% {
-      border-color: transparent;
-    }
-    50% {
-      border-color: #524dd0;
-      }
-  }
-
-  span.typewriter::before {
-    content: "\00a0";
-  }
-
   .text-blue {
     color: var(--blue);
   }
@@ -717,9 +762,27 @@ textarea {
     transition: all .4s ease;
   }
 
-  .option-one, .option-two, .option-three, .option-four {
+  .option-one {
+    position: relative;
+    padding: 0 3em 4.7em 3em;
+    margin-top: -8em;
+    background-color: var(--white);
+    z-index: 2;
+    transition: all 0.8s ease;
+  }
+
+  .option-two, .option-three {
     position: relative;
     padding: 0 3em 3em 3em;
+    margin-top: -8em;
+    background-color: var(--white);
+    z-index: 2;
+    transition: all 0.8s ease;
+  }
+
+  .option-four {
+    position: relative;
+    padding: 0 3em 4.7em 3em;
     margin-top: -8em;
     background-color: var(--white);
     z-index: 2;
@@ -766,12 +829,6 @@ textarea {
     gap: 4em;
   }
 
-  .mouse-animation {
-    transform-style: preserve-3d;
-    transition:all 2s linear;
-    perspective: 1000px;
-  }
-
   /* SERVICES */
 
   #services {
@@ -797,43 +854,70 @@ textarea {
     gap: 4em;
   }
 
-  .information-residents, .information-goals {
-    padding: 3em 3em 3em 3em;
+  .information-two {
+    padding: 5em 13em;
     background-color: var(--blue);
+  }
+
+  .information-residents, .information-goals {
+    background-color: var(--white);
     display: block;
   }
   
   .information-goals {
-    background-color: var(--blue);
     display: none;
+  }
+
+  .residents-padding, .goals-padding {
+    padding: 3em 3em 3em 3em;
   }
   
   .image-residents, .image-goals {
-    margin-top: 3em;
     width: 100%;
   }
 
-  .cta-blue-info {
-    font-weight: 500;
-    padding: 0.7em 3em;
-    background-color: var(--blue);
-    color: var(--white);
-    border-radius: 2em 2em 0 0;
-    overflow: hidden;
-    cursor: pointer;
-    display: block;
+  .cta-gradient-info {
+    margin-top: 1em;
+  padding: 0.7em 3em;
+  color: white;
+  font-weight: 500;
+  background-image: var(--cta-color);
+  border-radius: 2em;
+  }
+
+  .cta-gradient-info:hover {
+    background: white;
+    box-shadow: inset 0px 0px 0px 2px var(--blue);
   }
   
-  .cta-blue-info-two {
-    font-weight: 500;
-    padding: 0.7em 3em;
-    background-color: var(--white);
+  .cta-gradient-info a {
+    color: var(--white);
+  }
+  
+  .cta-gradient-info:hover a {
     color: var(--blue);
-    box-shadow:inset 0 0 0 0.125em var(--blue);
-    border-radius: 2em 2em 0 0;
-    overflow: hidden;
-    cursor: pointer;
-    display: block;
+  }
+  
+  .cta-gradient-info-two {
+    margin-top: 1em;
+  padding: 0.7em 3em;
+  color: white;
+  font-weight: 500;
+  background-image: var(--cta-color);
+  border-radius: 2em;
+  }
+
+  .cta-gradient-info-two:hover {
+    background: white;
+    box-shadow: inset 0px 0px 0px 2px var(--blue);
+  }
+  
+  .cta-gradient-info-two a {
+    color: var(--white);
+  }
+  
+  .cta-gradient-info-two:hover a {
+    color: var(--blue);
   }
 
   .blue {
@@ -847,16 +931,10 @@ textarea {
     display: block;
   }
 
-  .flex-cta-blue-info {
-    margin: 5em 0 0 0;
-    display: flex;
-    flex-direction: row;
-  }
-
   /* ABOUT */
 
 .initiatief {
-  padding: 5em 0;
+  padding-top: 5em;
 }
 
   #about {

@@ -29,25 +29,29 @@ const toggleFour = document.querySelector('.toggle-four');
 
 toggle.addEventListener('click', () => {
     option.classList.toggle('option-move-down');
+    toggle.classList.toggle('rotate')
 });
 
 toggleTwo.addEventListener('click', () => {
   two.classList.toggle('option-two-move-down');
+  toggleTwo.classList.toggle('rotate')
 });
 
 toggleThree.addEventListener('click', () => {
   three.classList.toggle('option-three-move-down');
+  toggleThree.classList.toggle('rotate')
 });
 
 toggleFour.addEventListener('click', () => {
   four.classList.toggle('option-four-move-down');
+  toggleFour.classList.toggle('rotate')
 });
 
 // TABS
 const show = document.querySelector('.show');
-const button = document.querySelector('.cta-blue-information');
+const button = document.querySelector('.cta-gradient-information');
 const showtwo = document.querySelector('.show-two');
-const buttontwo = document.querySelector('.cta-blue-information-two');
+const buttontwo = document.querySelector('.cta-gradient-information-two');
 
 button.addEventListener('click', () => {
     show.style.display = "block";
@@ -61,9 +65,9 @@ buttontwo.addEventListener('click', () => {
 
 // TABS TWO
 const showinfo = document.querySelector('.information-residents');
-const buttoninfo = document.querySelector('.cta-blue-info');
+const buttoninfo = document.querySelector('.cta-gradient-info');
 const showinfotwo = document.querySelector('.information-goals');
-const buttoninfotwo = document.querySelector('.cta-blue-info-two');
+const buttoninfotwo = document.querySelector('.cta-gradient-info-two');
 
 buttoninfo.addEventListener('click', () => {
     showinfo.style.display = "block";
