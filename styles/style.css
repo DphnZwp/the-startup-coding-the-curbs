@@ -46,7 +46,6 @@ p {
 }
 
 h1 {
-  font-family: 'Rajdhani', sans-serif;
   font-weight: 700;
   line-height: 1.1;
   font-size: 6.25rem;
@@ -66,14 +65,7 @@ h3 {
   font-weight: 600;
   font-size: 1.5625rem;
   color: var(--text-color);
-}
-
-h4 {
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 600;
-  font-size: 1.25rem;
-  color: var(--text-color);
-}
+}Z
 
 p {
   font-family: 'Rajdhani', sans-serif;
@@ -265,19 +257,6 @@ section #hero {
 .use-case-image {
   position: relative;
   width:100%;
-}
-
-.rotate {
-  font-size: 4rem;
-  display: block;
-  height: 0.6em;
-  padding: 0 0.5em;
-  background-image: var(--cta-color);
-  color: var(--white);
-  border-radius: 2em 2em 0 0;
-  overflow: hidden;
-  cursor: pointer;
-  rotate: 180deg;
 }
 
 /* PRODUCT */
@@ -910,6 +889,19 @@ textarea {
     border-radius: 0 0 2em 2em;
     overflow: hidden;
     cursor: pointer;
+  }
+
+  .rotate {
+    font-size: 4rem;
+    display: block;
+    height: 0.6em;
+    padding: 0 0.5em;
+    background-image: var(--cta-color);
+    color: var(--white);
+    border-radius: 2em 2em 0 0;
+    overflow: hidden;
+    cursor: pointer;
+    rotate: 180deg;
   }
 
   /* PRODUCT */
